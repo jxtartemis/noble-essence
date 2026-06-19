@@ -1,0 +1,31 @@
+{
+  "name": "noble-essence-storefront",
+  "version": "1.0.0",
+  "description": "Noble Essence - Customer Storefront",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^14.2.0",
+    "typescript": "^5.4.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.17",
+    "firebase": "^10.8.0",
+    "zustand": "^4.4.7",
+    "stripe": "^14.18.0",
+    "axios": "^1.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0"
+  }
+}
