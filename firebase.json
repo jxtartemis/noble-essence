@@ -1,0 +1,52 @@
+{
+  "firestore": [
+    {
+      "target": "firestore-prod",
+      "rules": "functions/firestore.rules"
+    }
+  ],
+  "storage": [
+    {
+      "target": "storage-prod",
+      "rules": "functions/storage.rules"
+    }
+  ],
+  "hosting": [
+    {
+      "target": "storefront",
+      "public": "storefront/.next",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "admin",
+      "public": "admin/.next",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default"
+    }
+  ]
+}
